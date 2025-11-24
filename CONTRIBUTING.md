@@ -1,6 +1,6 @@
 # Contributing to Automotive Supply Chain AI
 
-Thank you for your interest in contributing to this project! This document outlines the contribution process and guidelines to ensure a smooth collaboration experience.
+Thank you for your interest in contributing to this project! This document outlines the contribution process and guidelines to ensure a smooth collaboration experience. Really excited for your contributions!!
 
 ## 📋 Table of Contents
 
