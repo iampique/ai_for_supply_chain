@@ -221,15 +221,29 @@ For detailed testing instructions, see **TEST_WORKFLOW.md**.
 
 ## 📝 Documentation
 
+- **CONTRIBUTING.md**: Contribution guidelines and development workflow
 - **TEST_WORKFLOW.md**: Detailed testing guide for agentic workflows
+- **.github/BRANCH_PROTECTION_SETUP.md**: Guide for setting up branch protection rules (for maintainers)
 
 ## 🤝 Contributing
 
+We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+
+- Development workflow
+- Branch protection rules
+- Pull request process
+- Coding standards
+- Commit message guidelines
+
+**Quick Start:**
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+3. Make your changes and test them
+4. Commit your changes (`git commit -m 'feat: Add amazing feature'`)
+5. Push to your fork (`git push origin feature/amazing-feature`)
+6. Open a Pull Request targeting `master`
+
+**Note**: The `master` branch is protected. All changes must go through Pull Requests with review approval.
 
 ## 📄 License
 
