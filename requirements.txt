@@ -1,0 +1,28 @@
+# Vector Database
+qdrant-client>=1.12.0
+
+# Embeddings
+sentence-transformers>=2.2.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Agentic AI Framework
+crewai>=0.1.0
+
+# Data Manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Configuration Management
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Visualizations
+matplotlib>=3.7.0
+
+# Console Output
+rich>=13.0.0
+
+# Logging
+loguru>=0.7.0

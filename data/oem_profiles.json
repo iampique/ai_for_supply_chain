@@ -1,0 +1,72 @@
+{
+  "oems": [
+    {
+      "oem_id": "OEM-A",
+      "company_name": "Apex EV Motors",
+      "headquarters": "Fremont, California, USA",
+      "annual_production_units": 450000,
+      "market_segment": "Luxury Electric Vehicles",
+      "avg_vehicle_price_usd": 85000,
+      "primary_models": [
+        "Apex Model S",
+        "Apex Model X",
+        "Apex Roadster"
+      ],
+      "manufacturing_locations": [
+        "Fremont CA",
+        "Austin TX",
+        "Berlin Germany",
+        "Shanghai China"
+      ],
+      "technology_focus": "Advanced battery technology, autonomous driving, performance",
+      "quality_standard": "Zero-defect tolerance, premium components only"
+    },
+    {
+      "oem_id": "OEM-B",
+      "company_name": "Velocity Automotive Group",
+      "headquarters": "Dearborn, Michigan, USA",
+      "annual_production_units": 2500000,
+      "market_segment": "Mass Market Vehicles (ICE, Hybrid, EV)",
+      "avg_vehicle_price_usd": 35000,
+      "primary_models": [
+        "Velocity E-150",
+        "Velocity Escape Hybrid",
+        "Velocity Transit"
+      ],
+      "manufacturing_locations": [
+        "Dearborn MI",
+        "Chicago IL",
+        "Louisville KY",
+        "Hermosillo Mexico"
+      ],
+      "technology_focus": "Cost-effective electrification, reliability, broad appeal",
+      "quality_standard": "Industry-standard quality, balanced cost-performance"
+    },
+    {
+      "oem_id": "OEM-C",
+      "company_name": "Thunder Motors Corporation",
+      "headquarters": "Nagoya, Japan",
+      "annual_production_units": 3800000,
+      "market_segment": "Mass Market Vehicles (Strong Hybrid Focus)",
+      "avg_vehicle_price_usd": 32000,
+      "primary_models": [
+        "Thunder Camry Hybrid",
+        "Thunder Prius",
+        "Thunder RAV4 Prime"
+      ],
+      "manufacturing_locations": [
+        "Toyota City Japan",
+        "Georgetown KY",
+        "Guangzhou China",
+        "Thailand"
+      ],
+      "technology_focus": "Hybrid powertrains, legendary reliability, fuel efficiency",
+      "quality_standard": "Kaizen continuous improvement, extremely low defect rates"
+    }
+  ],
+  "metadata": {
+    "total_oems": 3,
+    "generated_date": "2024-11-23",
+    "version": "1.0"
+  }
+}

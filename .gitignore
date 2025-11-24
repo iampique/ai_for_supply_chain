@@ -1,0 +1,78 @@
+# Environment variables (NEVER commit these!)
+.env
+.env.local
+.env.*.local
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv
+venv.bak/
+env.bak/
+
+# Results and logs (generated files)
+results/
+*.log
+*.log.*
+logs/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+test_*.py
+check_*.py
+*_test.py
+!src/**/*_test.py
+
+# Test scripts (remove before commit)
+test_*.sh
+check_*.py
+test_*.py
+!src/**/test_*.py
+
