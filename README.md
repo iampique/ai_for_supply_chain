@@ -22,7 +22,7 @@ An AI-powered automotive supply chain management system using Qdrant 1.16 vector
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone git@github.com:iampique/ai_for_supply_chain.git
 cd automotive-supply-chain-ai
 ```
 
