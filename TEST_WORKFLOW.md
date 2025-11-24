@@ -28,8 +28,8 @@
 ### Step 1: Verify Environment Setup
 
 ```bash
-# Navigate to project directory
-cd /Users/pavanvemuri/Desktop/Code/automotive-supply-chain-ai
+# Navigate to project directory (adjust path as needed)
+cd ai_for_supply_chain
 
 # Activate virtual environment (if not already active)
 source venv/bin/activate
@@ -189,7 +189,7 @@ pip install -r requirements.txt
 Run this single command to test everything:
 
 ```bash
-cd /Users/pavanvemuri/Desktop/Code/automotive-supply-chain-ai && \
+cd ai_for_supply_chain && \
 source venv/bin/activate && \
 python -c "import os; assert os.getenv('OPENAI_API_KEY'), 'OPENAI_API_KEY not set'; from crewai import Crew; from src.agents.parts_discovery_agent import PartsDiscoveryAgent; from src.qdrant_client import get_qdrant_client; get_qdrant_client(); print('✓ All checks passed')" && \
 python -m src.demo_agentic_workflow
