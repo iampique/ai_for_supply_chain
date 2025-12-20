@@ -89,7 +89,7 @@ def load_json_file(filepath: str) -> List[Dict[str, Any]]:
         raise
 
 
-def load_all_data(data_dir: str = "data") -> Dict[str, List[Dict[str, Any]]]:
+def load_all_data(data_dir: Optional[str] = None) -> Dict[str, List[Dict[str, Any]]]:
     """
     Load all automotive supply chain data files.
     
@@ -101,7 +101,8 @@ def load_all_data(data_dir: str = "data") -> Dict[str, List[Dict[str, Any]]]:
     - quality_incidents.json -> "incidents"
     
     Args:
-        data_dir: Directory containing the JSON files (default: "data")
+        data_dir: Directory containing the JSON files. If None, automatically
+                 detects the data directory relative to this file or project root.
     
     Returns:
         Dictionary with keys: "parts", "suppliers", "relationships", "oems", "incidents"
@@ -112,7 +113,29 @@ def load_all_data(data_dir: str = "data") -> Dict[str, List[Dict[str, Any]]]:
         >>> print(f"Loaded {len(data['parts'])} parts")
         >>> print(f"Loaded {len(data['suppliers'])} suppliers")
     """
-    data_path = Path(data_dir)
+    # Auto-detect data directory if not provided
+    if data_dir is None:
+        # Try relative to this file first
+        current_file = Path(__file__)
+        data_path = current_file.parent.parent / "data"
+        
+        # If that doesn't exist, try current working directory
+        if not data_path.exists():
+            data_path = Path("data")
+        
+        # If still not found, try absolute path from common locations
+        if not data_path.exists():
+            # Try common project root locations
+            for possible_root in [
+                Path.cwd(),
+                current_file.parent.parent.parent,
+            ]:
+                possible_data = possible_root / "data"
+                if possible_data.exists():
+                    data_path = possible_data
+                    break
+    else:
+        data_path = Path(data_dir)
     
     if not data_path.exists():
         error_msg = f"Data directory not found: {data_dir}"
